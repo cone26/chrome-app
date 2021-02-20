@@ -65,7 +65,9 @@ body {
 .greeting {
   position: absolute;
   top: 52%;
-  left: 42.5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   font-size: 30px;
   font-style: italic;
 }
