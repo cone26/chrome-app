@@ -21,8 +21,8 @@ body {
 }
 .bgimage {
   position: absolute;
-  top: 170px;
-  left: 300px;
+  top: 26%;
+  left: 22%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
   width: 700px;
@@ -33,8 +33,8 @@ body {
   display: flex;
   position: absolute;
   position: fixed;
-  top: 110px;
-  left: 490px;
+  top: 17%;
+  left: 37%;
   font-size: 75px;
   font-weight: 600;
   width: 400px;
@@ -42,14 +42,14 @@ body {
 .js-clock {
   position: absolute;
   position: fixed;
-  top: 190px;
-  left: 590px;
+  top: 28%;
+  left: 43%;
   font-size: 25px;
 }
 .form {
   position: absolute;
-  top: 350px;
-  left: 510px;
+  top: 55%;
+  left: 38%;
 }
 .form input {
   width: 300px;
@@ -64,26 +64,26 @@ body {
 }
 .greeting {
   position: absolute;
-  top: 350px;
-  left: 555px;
+  top: 52%;
+  left: 42.5%;
   font-size: 30px;
   font-style: italic;
 }
 .js-weather {
   position: absolute;
   position: fixed;
-  top: 15px;
-  right: 10px;
+  top: 3%;
+  right: 1.5%;
   font-size: 15px;
   border-bottom: 1px solid white;
   padding: 0px 10px 10px 10px;
 }
 main {
   position: absolute;
-  /* z-index: -1; */
-  left: 350px;
+  /* z-index: -2; */
+  left: 26%;
   width: 600px;
   height: 100vh;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
