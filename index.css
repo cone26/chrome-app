@@ -11,7 +11,8 @@ body {
   display: none;
 }
 .showing {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 @keyframes fadeIn {
   from {
@@ -50,8 +51,7 @@ body {
 }
 .form {
   position: absolute;
-  display: flex;
-  justify-content: center;
+
   top: 55%;
   width: 100%;
 }
@@ -69,7 +69,6 @@ body {
 .greeting {
   position: absolute;
   top: 52%;
-  display: flex;
 
   width: 100%;
   font-size: 30px;
