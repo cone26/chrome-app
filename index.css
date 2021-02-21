@@ -34,10 +34,6 @@ body {
   position: absolute;
   top: 26%;
   left: 22%;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   z-index: -1;
   animation: fadeIn 0.5s linear;
   width: 700px;
@@ -48,26 +44,20 @@ body {
   display: flex;
   position: absolute;
   position: fixed;
-<<<<<<< Updated upstream
   top: 12%;
-  display: flex;
   font-family: "Homemade Apple", cursive;
-  /* left: 37%; */
+
   width: 100%;
   justify-content: center;
   font-size: 80px;
-=======
-  top: 17%;
-  left: 37.5%;
+
   font-size: 75px;
->>>>>>> Stashed changes
   font-weight: 600;
   font-style: italic;
 }
 .js-clock {
   position: absolute;
   position: fixed;
-<<<<<<< Updated upstream
   top: 28%;
   margin-left: -10px;
   display: flex;
@@ -75,29 +65,18 @@ body {
   justify-content: center;
   font-size: 25px;
   font-family: "Homemade Apple", cursive;
-=======
-  top: 29%;
-  left: 43.5%;
-  font-size: 20px;
->>>>>>> Stashed changes
 }
 .js-clock h1 {
-  border-bottom: 5px double white;
   padding: 0px 10px 5px 10px;
 }
 .form {
   position: absolute;
-<<<<<<< Updated upstream
   /* display: flex; */
   width: 100%;
   /* justify-content: center; */
   top: 55%;
   width: 100%;
   font-family: "Quicksand", sans-serif;
-=======
-  top: 60%;
-  left: 40%;
->>>>>>> Stashed changes
 }
 .form input {
   width: 300px;
@@ -113,14 +92,11 @@ body {
 }
 .greeting {
   position: absolute;
-<<<<<<< Updated upstream
   top: 52%;
   font-family: "Quicksand", "Noto Serif KR";
   width: 100%;
-=======
   top: 56%;
   left: 42%;
->>>>>>> Stashed changes
   font-size: 30px;
   font-style: italic;
 }
@@ -134,15 +110,12 @@ body {
   padding: 0px 10px 10px 10px;
   font-family: "Quicksand", sans-serif;
 }
-<<<<<<< Updated upstream
 .line {
   /* z-index: -2; */
   position: relative;
-=======
-main {
+
   position: absolute;
   /* z-index: -1; */
->>>>>>> Stashed changes
   left: 26%;
   width: 600px;
   height: 100%;
