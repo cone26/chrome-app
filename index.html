@@ -8,28 +8,54 @@
   </head>
   <body>
     <!-- clock -->
-    <main></main>
-    <span class="title"> Blah Blah </span>
-    <div class="js-clock">
-      <h1>00:00</h1>
-    </div>
-    <!-- greeting -->
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h2 class="js--greeting greeting"></h2>
-    <!-- todoform -->
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a todo-List" />
-    </form>
-    <ul class="js-toDoList"></ul>
 
-    <span class="js-weather"></span>
+    <div class="first-page">
+      <div class="musicButtons">
+        <span class="musicButtons__text">Play!</span>
+        <span class="musicButtons__play"> <i class="fas fa-play"></i></span>
+        <span class="musicButtons__pause"><i class="fas fa-pause"></i></span>
+      </div>
+      <div class="audio">
+        <audio src="bgm.wav"></audio>
+      </div>
+      <div class="line"></div>
+      <span class="title"> Jesu Juva . </span>
+      <div class="js-clock">
+        <h1>00:00</h1>
+      </div>
+      <!-- greeting -->
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h2 class="js--greeting greeting"></h2>
+
+      <span class="js-weather"></span>
+      <span class="scroll"><i class="fas fa-angle-double-down fa-2x"></i></span>
+      <span class="scroll__text">Scroll</span>
+    </div>
+
+    <div class="second-page">
+      <!-- todoform -->
+      <div class="line"></div>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a todo-List" />
+      </form>
+      <ul class="js-toDoList">
+        <!-- <span class="js-toDoList__title">-To-Do</span> -->
+      </ul>
+    </div>
 
     <script src="js-clock.js"></script>
     <script src="js-user.js"></script>
     <script src="js-todos.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
+    <script src="audio.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    >
+      '>
+    </script>
   </body>
 </html>

@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Permanent+Marker&family=Quicksand&display=swap");
+
 body {
   background-color: black;
   color: white;
   width: 100%;
-  height: 300%;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: auto;
+
+  display: block;
 }
 .form,
 .greeting {
@@ -26,6 +34,7 @@ body {
   position: absolute;
   top: 26%;
   left: 22%;
+
   z-index: -1;
   animation: fadeIn 0.5s linear;
   width: 700px;
@@ -36,24 +45,35 @@ body {
   display: flex;
   position: absolute;
   position: fixed;
-  top: 17%;
-  left: 37%;
-  font-size: 75px;
+  top: 12%;
+  display: flex;
+  font-family: "Homemade Apple", cursive;
+  /* left: 37%; */
+  width: 100%;
+  justify-content: center;
+  font-size: 80px;
   font-weight: 600;
-  width: 400px;
+  font-style: italic;
 }
 .js-clock {
   position: absolute;
   position: fixed;
   top: 28%;
-  left: 43%;
+  margin-left: -10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   font-size: 25px;
+  font-family: "Homemade Apple", cursive;
 }
 .form {
   position: absolute;
-
+  /* display: flex; */
+  width: 100%;
+  /* justify-content: center; */
   top: 55%;
   width: 100%;
+  font-family: "Quicksand", sans-serif;
 }
 .form input {
   width: 300px;
@@ -65,16 +85,17 @@ body {
   color: white;
   border-bottom: 1px solid white;
   text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 .greeting {
   position: absolute;
   top: 52%;
-
+  font-family: "Quicksand", "Noto Serif KR";
   width: 100%;
   font-size: 30px;
   font-style: italic;
 }
-.js-weather {
+.weather {
   position: absolute;
   position: fixed;
   top: 3%;
@@ -82,13 +103,130 @@ body {
   font-size: 15px;
   border-bottom: 1px solid white;
   padding: 0px 10px 10px 10px;
+  font-family: "Quicksand", sans-serif;
 }
-main {
-  position: absolute;
+.line {
   /* z-index: -2; */
+  position: relative;
   left: 26%;
   width: 600px;
-  height: 100vh;
+  height: 100%;
+  overflow: auto;
   border-left: 2px solid white;
   border-right: 2px solid white;
+}
+.first-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.second-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.js-toDoForm {
+  position: relative;
+  position: absolute;
+  top: 58%;
+  /* left: 38%; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100px;
+}
+.js-toDoForm input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+.js-toDoList {
+  width: 200px;
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  height: 200px;
+  font-family: "Quicksand", "Noto Serif KR";
+}
+.li {
+  list-style-type: circle;
+  padding: 4px 0px;
+  font-size: 13px;
+}
+.js-toDoList__title {
+  /* position: absolute; */
+  /* top: 23%;
+  left: 0; */
+  font-size: 20px;
+  font-weight: 600;
+  /* margin: 0% 0% 30% -10%; */
+}
+.js-btn {
+  background-color: inherit;
+  border: 1px solid white;
+  height: 25px;
+  width: 25px;
+  border-radius: 8px;
+  color: white;
+  margin-left: 6px;
+}
+
+.audio {
+  position: absolute;
+  top: 1%;
+  right: 15%;
+  border: none;
+  background: inherit;
+  color: white;
+  padding: 0px;
+  opacity: 0.8;
+}
+.musicButtons i {
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 0px 5px;
+}
+.musicButtons {
+  display: flex;
+  position: absolute;
+  top: 3.5%;
+  right: 11%;
+  position: fixed;
+}
+input::placeholder {
+  color: white;
+}
+.scroll {
+  position: absolute;
+  bottom: 10%;
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.scroll__text {
+  font-size: 13px;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  bottom: 7%;
+  font-family: "Quicksand", sans-serif;
+}
+.musicButtons__text {
+  font-size: 10px;
+  color: white;
+  padding-right: 4px;
+  font-family: "Quicksand", sans-serif;
 }
