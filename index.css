@@ -11,7 +11,7 @@ body {
   justify-content: center;
   position: relative;
   overflow: auto;
-
+  overflow-y: scroll;
   display: block;
 }
 .form,
@@ -46,10 +46,8 @@ body {
   position: fixed;
   top: 12%;
   font-family: "Homemade Apple", cursive;
-
   width: 100%;
   justify-content: center;
-  font-size: 80px;
 
   font-size: 75px;
   font-weight: 600;
@@ -90,16 +88,19 @@ body {
   text-align: center;
   font-family: "Quicksand", sans-serif;
 }
+
 .greeting {
   position: absolute;
   top: 52%;
   font-family: "Quicksand", "Noto Serif KR";
   width: 100%;
-  top: 56%;
-  left: 42%;
+  display: flex;
   font-size: 30px;
   font-style: italic;
+  justify-content: center;
+  /* left: 35%; */
 }
+
 .weather {
   position: absolute;
   position: fixed;
@@ -110,12 +111,11 @@ body {
   padding: 0px 10px 10px 10px;
   font-family: "Quicksand", sans-serif;
 }
+
 .line {
   /* z-index: -2; */
   position: relative;
-
   position: absolute;
-  /* z-index: -1; */
   left: 26%;
   width: 600px;
   height: 100%;
@@ -171,14 +171,7 @@ body {
   padding: 4px 0px;
   font-size: 13px;
 }
-.js-toDoList__title {
-  /* position: absolute; */
-  /* top: 23%;
-  left: 0; */
-  font-size: 20px;
-  font-weight: 600;
-  /* margin: 0% 0% 30% -10%; */
-}
+
 .js-btn {
   background-color: inherit;
   border: 1px solid white;
